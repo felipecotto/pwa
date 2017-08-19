@@ -13,5 +13,5 @@ firebase serve
 
 ```
 
-For detailed explanation on how things work, consult the [docs for vue-loader](http://vuejs.github.io/vue-loader).
+For detailed explanation on how things work, consult the [docs](https://codelabs.developers.google.com/codelabs/polymer-firebase-pwa/index.html?index=../../index#0).
 
