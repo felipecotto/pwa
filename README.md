@@ -6,7 +6,7 @@
 
 ``` bash
 # install dependencies
-bower install install
+bower install 
 
 # serve with hot reload at localhost:5000
 firebase serve 
