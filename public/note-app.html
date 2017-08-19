@@ -21,17 +21,17 @@
 	    signed-in="{{signedIn}}"
 	    user="{{user}}">
 	</firebase-auth>
+	<na-editor
+	    id="editor"
+	    note="{{editableNote}}"
+	    on-close="commitChange">
+	</na-editor>
 	<paper-fab
 	    icon="add"
 	    on-tap="create"
 	    disabled="[[!online]]"
 	    aria-label="Add note">
 	</paper-fab>
-	<na-editor
-	    id="editor"
-	    note="{{editableNote}}"
-	    on-close="commitChange">
-	</na-editor>
 	<firebase-document
 	    id="document"
 	    app-name="notes"
@@ -77,6 +77,10 @@
 
 		   toEditableId: function(noteId) {
 		     return this.notesPath + '/' + noteId;
+		   },
+
+		   get isEditable() {
+		     return this.online;
 		   }
 		});
 	</script>
